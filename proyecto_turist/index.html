@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colombian Birding Adventures</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Montserrat&display=swap" rel="stylesheet" />
+   <link
+    rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="main-header">
+    <img src="assets/logo-pajaro.jpeg" alt="Logo Colombian Birding Adventures" class="logo" />
+    <nav aria-label="Navegación principal">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
+        <li><a href="#aventura">Aventura</a></li>
+        <li><a href="#reservacion">Reservación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="hero-section">
+      <h1>Colombian Birding Adventures</h1>
+      <p class="slogan">“Entre cantos y aromas”</p>
+    </section>
+
+
+ <!-- EXPERIENCIA -->
+<section id="experiencia" class="info-section">
+  <h2>La Experiencia</h2>
+  <article>
+    <p>
+      Ubicada en Silvania Cundinamarca, a tan solo hora y media de Bogotá, 
+      Finca Cosecha Real es un espacio donde la conservación del bosque andino se une con la producción de café orgánico de alta calidad.
+      Cada visita es un recorrido entre aves, paisajes únicos y el aroma del café recién tostado.
+    </p>
+  </article>
+
+  <!-- SLIDER -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.45.jpeg" alt="Imagen 1" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.46 (1).jpeg" alt="Imagen 2" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.46.jpeg" alt="Imagen 3" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.47.jpeg" alt="Imagen 4" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.48 (1).jpeg" alt="Imagen 5" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.48.jpeg" alt="Imagen 6" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.49.jpeg" alt="Imagen 7" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.49 (1).jpeg" alt="Imagen 8" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.50.jpeg" alt="Imagen 9" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.45.59.jpeg" alt="Imagen 10" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.00 (1).jpeg" alt="Imagen 11" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.00 (2).jpeg" alt="Imagen 12" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.00.jpeg" alt="Imagen 13" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.01.jpeg" alt="Imagen 14" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.02 (1).jpeg" alt="Imagen 15" /></div>
+      <div class="swiper-slide"><img src="assets/WhatsApp Image 2025-09-19 at 14.46.02.jpeg" alt="Imagen 16" /></div>
+    </div>
+
+    <!-- Botones de navegación -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    
+    <!-- Paginación -->
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+    <!-- CTA AVENTURA -->
+    <section id="aventura" class="aventura-section">
+      <h2>¿Listo para la Aventura?</h2>
+      <p>
+        Contáctanos para diseñar una experiencia a tu medida o resolver cualquier duda. 
+        ¡Estamos aquí para ayudarte a descubrir lo mejor de Colombia!
+      </p>
+      <a href="wa.link/84r03c" target="_blank" class="btn-whatsapp">
+        <img src="assets/wha.webp" alt="WhatsApp" /> Chatea con nosotros
+      </a>
+      <p class="correo">
+        O escríbenos a: 
+        <a href="mailto:contacto@colombianbirding.com">contacto@colombianbirding.com</a>
+      </p>
+    </section>
+
+    <!-- RESERVACIÓN -->
+    <section id="reservacion" class="reservacion-section">
+      <h2>Haz tu Reservación</h2>
+      <form id="reservationForm">
+        <input type="text" name="name" placeholder="Nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <label for="checkin">Fecha de llegada:</label>
+        <input type="date" id="checkin" name="checkin" required />
+        <label for="checkout">Fecha de salida:</label>
+        <input type="date" id="checkout" name="checkout" required />
+        <input type="number" name="guests" placeholder="Número de personas" min="1" required />
+        <button type="submit">Reservar</button>
+      </form>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact-section">
+      <h2>Contacto</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Nombre completo" required />
+        <input type="email" name="email" placeholder="Correo electrónico" required />
+        <textarea name="message" placeholder="Tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="main-footer">
+    <p>&copy; 2025 Colombian Birding Adventures. Todos los derechos reservados.</p>
+  </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="app.js"></script></body>
+</html>
